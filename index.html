@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400&family=Sevillana&family=Source+Sans+Pro:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="home">
+        <div class="main-width">
+            <header>
+                <nav id="nav-menu">
+                    <div>
+                        <h2 id="user-detail-name">Abdul Rahim Laskar</h2>
+                    </div>
+                    
+                    
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link home" id="active">Home</a></li>
+                        <li><a href="#about" class="nav-link about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </div>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                    <h3>Hi, There!</h3>
+                    <h1>I am <span id="span_name"></span></h1>
+                    <p>Full Stack Web Developer</p>
+                    <div class="social">
+                        <a id="phone" href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a id="email" href="#"><i class="fa-solid fa-envelope"></i></a>                        
+                        <a id="contact-github" href="#"><i class="fa-brands fa-github"></i></a>
+                        <a id="contact-linkedin" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                        <p id="contact-phone">+91 8256904648, +91 9366474803</p>
+                        <p id="contact-email">arlaskar1002@gmail.com</p>
+                        
+                    </div>
+                    <button>Download Resume</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about me -->
+    <section id="about">
+        <div class="about_section">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/pp.jpg" alt=""> 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                     <h5>Full Stack Web Developer</h5>
+                    <p id="user-detail-intro">Versatile and enthusiastic individual worth hand experience of solving 1000+ DSA question and 100+ small web application and with a considerable technical skill who possesses self- discipline and ability to work with minimum of supervision.  An ambitious and self-motivated web developer Able to play a key role in website development to ensure maximum accessibility, user experience and usability. A quick learner who can absorb new ideas and can communicate clearly and effectively.</p>
+                    
+                </div>
+            </div>
+                        
+        </div>
+    </section>
+    <section id="skills">
+        <div id="skills_div">
+            <h2>My Skills</h2>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('it_skills')">IT Skills</p>
+                <p class="tab-links" onclick="opentab('soft_skills')">Soft Skills</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="it_skills">
+                <ul>
+                    <li><span><img class="skills-card-img" src="./images/java.png" alt=""></span><p class="skills-card-name">Java</p></li>
+                    <li><span><img class="skills-card-img" src="./images/js.png" alt=""></span><p class="skills-card-name">JavaScript</p></li>
+                    <li><span><img class="skills-card-img" src="./images/react.png" alt=""></span><p class="skills-card-name">React</p></li>
+                    <li><span><img class="skills-card-img" src="./images/html.png" alt=""></span><p class="skills-card-name">Hypertext Markup Language</p></li>
+                    <li><span><img class="skills-card-img" src="./images/css.webp" alt=""></span><p class="skills-card-name">Cascading Style Sheets</p></li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="soft_skills">
+                <ul>
+                    <li><span><i class="fa-solid fa-lightbulb "></i></span><p class="skills-card-name">Problem Solving</p></li>
+                    <li><span><i class="fa-solid fa-lightbulb "></i></span><p class="skills-card-name">Adaptability</p></li>
+                    <li><span><i class="fa-solid fa-lightbulb "></i></span><p class="skills-card-name">Strong Work Ethic</p></li>
+                    <li><span><i class="fa-solid fa-lightbulb "></i></span><p class="skills-card-name">Time Management</p></li>
+                    <li><span><i class="fa-solid fa-lightbulb "></i></span><p class="skills-card-name">Communication</p></li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022-2023</span><br>Full Stack Web Development from Masai School Banglore</li>
+                    <li><span>2015-2018</span><br>BCA from ICFAI University Nagaland</li>
+                </ul>
+            </div>
+        </div>     
+    </section>
+    <section id="project" >
+        <h1>My Projects</h1>
+        <div id="project-card">
+            <div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="./images/boatHomePage.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/shopCategory.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/dailyDeals.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/add.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/add2.png" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/footer.png" alt=""></div>
+                      ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="project_desc">
+                    <h3 class="project-title">boAt LifeStyle CLONE</h3>
+                    <p class="project-description">BoAt is an India-based consumer electronics brand established in 2015 that markets earphones, headphones stereos, travel chargers and premium rugged cables. Imagine Marketing Services Private Limited, which does business as BoAt, was incorporated in November 2013 by co-founders Sameer Ashok Mehta and Aman Gupta.</p><br>
+                    <p class="project-tech-stack">This was an attempt to clone the boAt-Lifestyle website using just HTML,CSS & JavaScript only.</p>
+                    <p>We had successfully maintained the UserFlow on our cloned website.</p>
+                    <p>We were team of 3 people.</p>
+                    <ul id="ul">
+                        <li>Abdul Rahim Laskar</li>
+                        <li>Akshata Ganbote</li>
+                        <li>Prathamesh Nimje</li>
+                    </ul>
+                    <br>
+                    <p >Deployed Link: <a class="project-deployed-link" href="https://imaginative-tarsier-6b75ba.netlify.app/">https://imaginative-tarsier-6b75ba.netlify.app/</a> </p>
+                    <p>GitHub Repository Link: <a class="project-github-link" href="https://github.com/Prathamesh52-28/Boat_project.git">https://github.com/Prathamesh52-28/Boat_project.git</a> </p>
+                    
+                </div>
+            </div>           
+            <div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="./images/sephoraHome.PNG" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/sephora2.PNG" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/sephora3.PNG" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/sephora31.PNG" alt=""></div>
+                      <div class="swiper-slide"><img src="./images/sephora4.PNG" alt=""></div>
+                      
+                      ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="project_desc">
+                    <h3 class="project-title">boAt LifeStyle CLONE</h3>
+                    <p class="project-description">Sephora is a French multinational retailer of personal care and beauty products. Featuring nearly 340 brands, along with its own private label, Sephora Collection, Sephora offers beauty products including cosmetics, skincare, body, fragrance, nail color, beauty tools, body lotions and haircare. The company was founded in Limoges in 1969 and is currently based in Neuilly-sur-Seine, France. Sephora is owned by luxury conglomerate LVMH as of 1997. The name comes from the Greek word meaning beauty, sephos, and the Greek spelling of Zipporah (Greek: Σεπφώρα, Sepphōra), wife of Moses, described in midrash, aggadah and Targum Onkelos as beautiful.</p><br>
+                    <p class="project-tech-stack">This was an attempt to clone the SEPHORA website using just HTML,CSS & JavaScript only.</p>
+                    <p>We had successfully maintained the UserFlow on our cloned website.</p>
+                    <p>We were team of 5 people.</p>
+                    <ul id="ul">
+                        <li>Abdul Rahim Laskar</li>
+                        <li>Arshad Iqubal</li>
+                        <li>Dinesh Sengar</li>
+                        <li>Manish Verma</li>
+                        <li>Surya Prakash Singh</li>
+                    </ul>
+                    <br>
+                    <p >Deployed Link: <a class="project-deployed-link" href="https://suryathink.github.io/sephora-clone/">https://suryathink.github.io/sephora-clone/</a> </p>
+                    <p>GitHub Repository Link: <a class="project-github-link" href="https://github.com/suryathink/sephora-clone.git">https://github.com/suryathink/sephora-clone.git</a> </p>
+                    
+                </div>
+            </div>           
+            
+            
+        </div>
+        
+    </section>
+</body>
+<script src="https://kit.fontawesome.com/8bc2958a7c.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    var typed=new Typed("#span_name", {
+        strings:["Abdul Rahim Laskar","Full Stack Web Developer"],
+        typeSpeed: 70,
+        backSpeed:60,
+        loop:true
+    })
+
+    const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay:{
+                delay:3000,
+                disableOnInteraction:false,
+            },
+            loop: true,
+          
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+              clickable:true,
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          
+            
+          });
+        
+</script>
+</html>
