@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-
 <body>
     <section id="home">
         <div class="main-width">
@@ -23,11 +22,11 @@
                     
                     
                     <ul class="nav-list">
-                        <li><a href="#" class="nav-link home" id="active">Home</a></li>
+                        <li><a href="#home" class="nav-link home" id="active">Home</a></li>
                         <li><a href="#about" class="nav-link about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#project">Project</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#skills" class="nav-link skills">Skills</a></li>
+                        <li><a href="#project" class="nav-link project">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="hamburger">
                         <i class="fa-solid fa-bars fa-2x"></i>
@@ -49,7 +48,8 @@
                         <p id="contact-email">arlaskar1002@gmail.com</p>
                         
                     </div>
-                    <button>Download Resume</button>
+                    
+                    <a href="./A_R_laskar_resume.pdf" download class="download-btn"><button id="resume-button-1">Resume&nbsp;&nbsp;<i class="fa-solid fa-download"></i></button></a>
                 </div>
             </div>
         </div>
@@ -65,9 +65,10 @@
                     <h1 class="sub-title">About <span>Me</span></h1>
                      <h5>Full Stack Web Developer</h5>
                     <p id="user-detail-intro">Versatile and enthusiastic individual worth hand experience of solving 1000+ DSA question and 100+ small web application and with a considerable technical skill who possesses self- discipline and ability to work with minimum of supervision.  An ambitious and self-motivated web developer Able to play a key role in website development to ensure maximum accessibility, user experience and usability. A quick learner who can absorb new ideas and can communicate clearly and effectively.</p>
-                    
+                    <a href="./A_R_laskar_resume.pdf"><button id="resume-button-2">Resume &nbsp;&nbsp;&nbsp;<i class="fa-regular fa-eye"></i></button></a>
                 </div>
             </div>
+            
                         
         </div>
     </section>
@@ -181,15 +182,39 @@
                         <li>Surya Prakash Singh</li>
                     </ul>
                     <br>
-                    <p >Deployed Link: <a class="project-deployed-link" href="https://suryathink.github.io/sephora-clone/">https://suryathink.github.io/sephora-clone/</a> </p>
-                    <p>GitHub Repository Link: <a class="project-github-link" href="https://github.com/suryathink/sephora-clone.git">https://github.com/suryathink/sephora-clone.git</a> </p>
+                    <p >Deployed Link : <a class="project-deployed-link" href="https://suryathink.github.io/sephora-clone/">https://suryathink.github.io/sephora-clone/</a> </p>
+                    <p>GitHub Repository Link : <a class="project-github-link" href="https://github.com/suryathink/sephora-clone.git">https://github.com/suryathink/sephora-clone.git</a> </p>
                     
                 </div>
             </div>           
+        </div>        
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div id="contact_container">
+            <div class="contact_card">
+                <i class="fa-solid fa-house fa-2x"></i>
+                <p>Chumukedima Town, Dimapur, Nagaland-797103</p>
+            </div>
             
-            
+            <div class="contact_card">
+                <i class="fa-solid fa-phone fa-2x"></i>
+                <p>+91 9366474307, +91 8256904648</p>
+            </div>
+            <div class="contact_card">
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <p>arlaskar1002@gmail.com</p>
+            </div>
+            <div class="contact_card">
+                <img id="whatsappIcon" src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="">
+                <p>9366474308</p>
+            </div>
+            <div class="contact_card">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+                <p><a id="linkedinLink" ref="https://www.linkedin.com/in/a-r-laskar-29140a174/">https://www.linkedin.com/in/a-r-laskar-29140a174/</a></p>
+            </div>
         </div>
-        
+
     </section>
 </body>
 <script src="https://kit.fontawesome.com/8bc2958a7c.js" crossorigin="anonymous"></script>

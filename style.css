@@ -8,8 +8,8 @@
 }
 body{
     overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 .main-width{
     width: 1280px;
@@ -21,7 +21,7 @@ body{
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/pp.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/pp.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -134,6 +134,9 @@ header{
     color:#2ecc71 ;
     transition: .4s;
 }
+#resume-button-1 a{
+    text-decoration: none;
+}
 
 /* About Me */
 .about_section{
@@ -159,7 +162,7 @@ header{
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 50%;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -206,6 +209,24 @@ header{
 }
 .tab-contents.active-tab{
     display: block;
+}
+#resume-button-2{
+    color: #eee;
+    background-color: #2ecc71;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid #2ecc71;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#resume-button-2:hover{
+    background: transparent;
+    border: 2px solid #2ecc71;
+    color:#2ecc71 ;
+    transition: .4s;
 }
 
 /* skills */
@@ -255,10 +276,9 @@ header{
 }
 #project-card{
     width: 1280px;
-    max-width: 95%;
+    max-width: 95  %;
     margin: 0 auto;
-    padding: 0 20px;
-    
+        
 }
 #project-card>div{
     display: flex;
@@ -296,14 +316,52 @@ header{
     font-weight: 600;
     color: white;
     text-align: center;
-    padding: 50px 0;
-
+    /* padding: 50px 0; */
 }
 .project_desc ul{
     margin-left:50px ;    
 }
-
-
+.project-deployed-link,.project-github-link {
+    text-decoration: none;
+    color: white;
+}
+/* contact */
+#contact{
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    color: white;
+}
+#contact_container{
+    width: 1280px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#contact h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+#whatsappIcon{
+    width: 35px; 
+    color: #2ecc71;   
+}
+.contact_card i{
+    color: #2ecc71;
+}
+#linkedinLink{
+    text-decoration: none;
+}
+.contact_card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
 
 
 @media (max-width: 900px){
@@ -351,7 +409,11 @@ header{
         font-weight: 600;
         padding: 10px 0;    
     }
-
+    #contact h1{
+        font-size: 40px;
+        font-weight: 600;
+        padding: 20px 0;
+    }
     
 }
 @media (max-width: 800px){
@@ -434,5 +496,10 @@ header{
         font-size: 40px;
         font-weight: 600;
         padding: 10px 0;    
+    }
+    #contact h1{
+        font-size: 40px;
+        font-weight: 600;
+        padding: 10px 0;
     }
 }
