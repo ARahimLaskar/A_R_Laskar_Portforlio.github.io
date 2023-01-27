@@ -1,1 +1,1 @@
-Hi! Its me Abdul Rahim Laskar and im an Front End Developer and this is my Portfolio
+Hi! Its me Abdul Rahim Laskar, im an enthusiastic Front End Developer seeking for knowledge and experience, and this is my Portfolio.
